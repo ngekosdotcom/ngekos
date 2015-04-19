@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+<title>Popup contact form</title>
+<!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+ <link rel="stylesheet" href="assets/lib/sweet-alert.css">
+	<script src="assets/lib/sweet-alert.min.js"></script>
+    <script src="assets/js/chart-master/Chart.js"></script>
+<link href="assets/css/popuppesan.css" rel="stylesheet">
+<script src="assets/js/popuppesan.js"></script>
+</head>
+<!-- Body Starts Here -->
+	<div style="overflow:hidden;">
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div class="popupContact" >
+		<!-- Contact Us Form -->
+			<form action="#" class="formMsg" method="post" name="form" id="buat_kamar">
+				<img id="close" src="assets/img/exit.png" width="50" height="50"onclick ="div_hide()">
+				<h2 class="pesan">Rincian Kamar</h2>
+				</br>
+						<table >
+							
+								<tr>
+									<td colspan="2">
+									Harga (Rp)
+									<input type=text required id=harga  placeholder="Contoh: 200000" size="20"">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+									<br>
+									Ukuran Kamar (meter) 
+									<input type="text" required name="panjang" size="5" placeholder="panjang">
+									 x  
+									<input type="text" required name="lebar" size="5" placeholder="lebar">
+									</td>
+									
+								</tr>
+								<tr>
+									<td colspan="2">
+									<br>
+									Jumlah Penghuni Maksimal:
+									<input type="text" required placeholder="Contoh: 2" name="jmlPenghuni" size="10">
+									</td>
+								</tr>
+														<tr>
+							<td>
+							<br>
+								Fasilitas:<br/>
+								<input type="checkbox" name="fasKmr" value="kasur">Kasur<br>
+								<input type="checkbox" name="fasKmr" value="lemari">Lemari<br>
+								<input type="checkbox" name="fasKmr" value="meja">Meja Belajar<br>
+								<input type="checkbox" name="fasKmr" value="ac">AC<br>
+								<input type="checkbox" name="fasKmr" value="lain2">Lainnya:
+								<input type="text" name="fasKmrLain" size="15" placeholder="Masukkan fasilitas lain..">
+							</td>
+							<td>
+							<br>
+								Kamar Mandi: <br/>
+								<input type="checkbox" name="km" value="dalam">Dalam<br>
+								<input type="checkbox" name="km" value="dalam">Luar<br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<br>
+								Upload Contoh Foto Kamar: 
+								<input type="file" name="fotoKamar[]" size="40" multiple> <br/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" align="center" size="50">
+							<br>
+								<button type="submit" class="btn btn-theme">Simpan</button>
+							</td>
+						</tr>
+						</table>
+		</form>
+		</div>
+		<!-- Popup Div Ends Here -->
+		</div>
+<!-- Display Popup Button -->
+<button id="popup" onclick="div_show()">Buat Rincian Kamar</button>
+</body>
+<!-- Body Ends Here -->
+</html>

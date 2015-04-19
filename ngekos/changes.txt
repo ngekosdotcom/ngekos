@@ -1,0 +1,28 @@
+-perubahan di bootstrap.css
+-add form pesan di infoKosB
+- untuk semua page milik Pemilik, 
+	tolong add  submenu Lihat Daftar Penghuni  di menu Manajemen Kos:
+				<li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Manajemen Kos</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="buat_kos.html">Buat Kos</a></li>
+                          <li><a  href="daftar_kos.html">Lihat Daftar Kos</a></li>
+						   <li><a  href="daftar_penghuni.html">Lihat Daftar Penghuni</a></li>
+                      </ul>
+                  </li>
+-new page: daftar_penghuni.html
+-add assets/css/popuppesan.cs (daftar_penghuni.html)
+-add assets/js/popuppesan.js  (daftar_penghuni.html)
+-add assets/img/exit.png (daftar_penghuni.html)
+-add assets/img/msg.png (daftar_penghuni.html)
+-untuk semua page tolong ubah baris ini:
+	 <a href="berandaA.html#">See all messages</a>
+  menjadi ini:
+	 <a href="pesan.html">Lihat seluruh pesan</a>
+-add pesan.html -> halaman pesan
+-add pesanA.html -> contoh halaman pesan yang ada percakapannya
+- add searchA.html (new) hasil pencarian di halaman search
+- add popup buat kamar. Tinggal di copas aja htmlnya, sama link ke popuppesan.cs dan popuppesan.js
